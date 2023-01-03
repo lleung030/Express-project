@@ -31,6 +31,14 @@ app.get("/profile", (req, res) => {
   res.render("profile", data);
 });
 
+app.get("/user", (req, res) => {
+    res.send("This is a user's page.")
+})
+
+app.get("/register", (req, res) => {
+    res.send("You are registered.")
+})
+
 app.get("/login", (req, res) => {
     res.send("You are logged in.")
 })
