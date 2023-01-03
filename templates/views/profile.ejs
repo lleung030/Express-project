@@ -1,0 +1,17 @@
+<%- include('../partials/header.ejs') %>
+
+
+<h1>Profile</h1>
+
+<h2>Welcome to your profile, <%= info.name %></h2>
+
+<h3>Your Profile</h3>
+
+<% for (const post of info.posts) { %>
+    <div class="card">
+        <p><%- post.body %></p>
+    </div>
+<% } %>
+
+
+<%- include('../partials/header.ejs') %>

@@ -1,0 +1,22 @@
+<%- include('../partials/header.ejs') %>
+
+
+<h1>Home sweet Home</h1>
+
+<h2>Welcome <%= user.name %></h2>
+<p>Email: <%= user.email %></p>
+<p>Favorite Color: <%= user.favoriteColor %></p>
+
+<h3>Your Posts</h3>
+
+
+<% for (const item of user.cart) { %>
+    <div class="card">
+        <p>ID: <%= item.id %></p>
+        <p>Name: <%= item.name %></p>
+        <p>Description: <%= item.description %></p>
+        <p>Image <%- item.img %></p>
+    </div>
+<% } %>
+
+<%- include('../partials/header.ejs') %>
